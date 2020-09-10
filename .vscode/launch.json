@@ -1,0 +1,58 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "jest unit",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["--runInBand"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "runtimeArgs": ["-r", "tsconfig-paths/register", "-r", "ts-node/register"],
+      "outputCapture": "console"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "jest coverage",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["--coverage"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "outputCapture": "console"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "jest e2e",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["--config", "${workspaceFolder}/test/jest-e2e.json"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "env": {
+        "NODE_ENV": "e2e"
+      },
+      "outputCapture": "console"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "local",
+      "program": "${workspaceFolder}/src/main.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "console": "integratedTerminal",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      // "env": {
+      //   "NODE_ENV": "development.env"
+      // },
+      "outputCapture": "console"
+    }
+  ]
+}

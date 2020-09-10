@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "url": "https://digitalgym.org/",
+        "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/consociation/digitalgym.jpg",
+        "msg": "digitalgym"
+    },
+    {
+        "id": 2,
+        "url": "https://ucsd.edu/",
+        "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/consociation/ucsd.jpg",
+        "msg": "ucsd"
+    },
+    {
+        "id": 3,
+        "url": "https://www.facebook.com/ucsdhksu/",
+        "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/consociation/hksu.jpg",
+        "msg": "hksu"
+    },
+    {
+        "id": 4,
+        "url": "http://www.steamleadership.com/gameday/speaker/ucsd-vr-club/",
+        "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/consociation/vrclub.jpg",
+        "msg": "vrclub"
+    },
+    {
+        "id": 5,
+        "url": "https://www.greenriver.edu/",
+        "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/consociation/grcc.jpg",
+        "msg": "grcc"
+    },
+    {
+        "id": 6,
+        "url": "https://revelle.ucsd.edu/",
+        "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/consociation/revelle.jpg",
+        "msg": "revelle"
+    },
+    {
+        "id": 7,
+        "url": "https://www.chineseunion.org/",
+        "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/consociation/cu.jpg",
+        "msg": "cu"
+    },
+    {
+        "id": 8,
+        "url": "https://www.worldviewproject.org/",
+        "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/consociation/wwp.jpg",
+        "msg": "wwp"
+    },
+    {
+        "id": 9,
+        "url": "http://hiss-us.com/us-china-technology-innovation-and-development-uctid/",
+        "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/consociation/uctid.jpg",
+        "msg": "uctid"
+    }
+]

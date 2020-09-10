@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '12'
+dist: trusty
+sudo: false
+install:
+  - npm install
+  - npm run test
+deploy:
+  provider: heroku
+  api_key:
+    secure: ${APP_KEY}
+  app: shijiezhou
+  on:
+    repo: shijiezhou1/apinestjs

@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "50 COMMON INTERVIEW QUESTIONS",
+      "url": "https://drive.google.com/file/d/19-b9elecsu4i5NbCopapMXWdciDkUi9g/view?usp=sharing",
+      "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/OKAY/book1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Laravel Up and Run",
+      "url": "https://drive.google.com/file/d/1Yr8u3hwis6kPydkDTsrlIYaX7gfiZbnA/view?usp=sharing",
+      "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/OKAY/book2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "CSS",
+      "url": "https://drive.google.com/file/d/1495o-lIXvXP5jlhOyfKVNdpNFzGic0cv/view?usp=sharing",
+      "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/OKAY/book3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "PHP & MYSQL WebDevelopment",
+      "url": "https://drive.google.com/file/d/1wAtC0P8JvCT8JMAVbVWBtUW0Q5-JI9BY/view?usp=sharing",
+      "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/OKAY/book5.jpg"
+    },
+    {
+      "id": 5,
+      "name": "HTML CSS",
+      "url": "https://drive.google.com/file/d/16A5975fTZiR60ItW9Sfx2WuCPD7y0uiP/view?usp=sharing",
+      "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/OKAY/book8.jpg"
+    },
+    {
+      "id": 6,
+      "name": "CLEAN CODE HANDBOOK",
+      "url": "https://drive.google.com/file/d/19-b9elecsu4i5NbCopapMXWdciDkUi9g/view?usp=sharing",
+      "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/OKAY/book6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Learn React",
+      "url": "https://drive.google.com/file/d/1nXTd__OMOMFh6oB48uN04hS5gxqfbb8r/view?usp=sharing",
+      "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/OKAY/book7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "AJAX",
+      "url": "https://drive.google.com/file/d/15P5Vqn4v1pYsqNAA4GF7X3XOqScv0kbS/view?usp=sharing",
+      "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/OKAY/book4.jpg"
+    },
+    
+    {
+      "id": 9,
+      "name": "JAVASCRIPT WEB APPLICATION",
+      "url": "https://drive.google.com/file/d/1pziFmOXj8pG5XvDlUqorrvb_WZQAu0uI/view?usp=sharing",
+      "img": "https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/OKAY/book9.jpg"
+    }
+  ]
