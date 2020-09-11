@@ -26,3 +26,18 @@ reword 6391223
 ```sh
 git rebase -i --root master
 ```
+
+### stash files
+
+```
+git stash push -u filename 
+```
+
+```
+git stash pop
+```
+
+### Remove last commit from
+```sh
+git commit --amend -m "an updated commit message"
+```

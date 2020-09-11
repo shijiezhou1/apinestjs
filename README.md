@@ -125,17 +125,3 @@ new|n [options] [name]                          Generate Nest application.
       │ sub-app       │ app         │
       └───────────────┴─────────────┘
 ```
-### stash files
-
-```
-git stash push -u filename 
-```
-
-```
-git stash pop
-```
-
-### Remove last commit from
-```sh
-git commit --amend -m "an updated commit message"
-```
