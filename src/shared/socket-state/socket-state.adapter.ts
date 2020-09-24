@@ -57,7 +57,9 @@ export class SocketStateAdapter extends IoAdapter implements WebSocketAdapter {
     server.on('connection', (socket: AuthenticatedSocket) => {
 
       // CONNECTION MSG
-      socket.emit('success', {message: 'Server Accecpting Connections'});
+      setInterval(() => {
+        socket.emit('success', {message: 'Server Accecpting Connections'});
+      },500);
 
       // WATCH
       process.on('SIGINT', () => {
@@ -65,16 +67,18 @@ export class SocketStateAdapter extends IoAdapter implements WebSocketAdapter {
         process.exit();
       });
 
-      // socket.on('authenticate', function (payload) {
-      //   const data = JSON.parse(payload.data);
-      //   if (data.password == 'passwd' && data.username == 'admin') {
-      //     socket.emit('auth', { jwt: 'Generated JWT Token'} );
-      //     socket.emit('success', { message: 'You are logged in' });
-      //     socket.emit('info', { message: 'JWT Token Attached', jwt: 'GeneRAtEdJwTOken' });
-      //   } else {
-      //     socket.emit('oops', { message: 'Invalid Credentials Supplied' })
-      //   }
-      // });
+      socket.on('authenticate', function (payload) {
+        console.log('authenticate')
+        const data = JSON.parse(payload.data);
+        if (data.password == 'passwd' && data.username == 'admin') {
+          socket.emit('auth', { jwt: 'Generated JWT Token'} );
+          socket.emit('success', { message: 'You are logged in' });
+          socket.emit('info', { message: 'JWT Token Attached', jwt: 'GeneRAtEdJwTOken' });
+        } else {
+          socket.emit('oops', { message: 'Invalid Credentials Supplied' })
+        }
+      });
+
 
       if (socket.auth) {
         this.socketStateService.add(socket.auth.userId, socket);
