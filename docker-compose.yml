@@ -15,17 +15,21 @@ services:
     command: npm run start:prod
     env_file:
       - .env
+    # networks:
+      # - socket-network
     networks:
-      - socket-network
+      - default
     depends_on:
       - socket-redis
   socket-redis:
     image: redis:5
     ports:
       - 6379:6379
+    # networks:
+    #   - socket-network
     networks:
-      - socket-network
-networks:
-  socket-network:
+      - default
+# networks:
+#   socket-network:
 volumes:
   socket-pgdata:
