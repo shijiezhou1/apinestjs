@@ -10,8 +10,8 @@ import { EventsGateway } from '../test.gateway';
 
 import { ArticlesModule } from '@src/articles/articles.module';
 import { SharedModule } from '../shared/shared.module';
-import { LoginModule } from '@src/login/login.module';
-import { MongooseModule } from '@nestjs/mongoose';
+// import { LoginModule } from '@src/login/login.module';
+// import { MongooseModule } from '@nestjs/mongoose';
 import { BooksModule } from "@src/books/books.module";
 import { PodcastsModule } from "@src/podcasts/podcasts.module";
 import { MediumModule } from "@src/medium/medium.module";
@@ -24,7 +24,7 @@ import { ConsociationModule } from '@src/consociation/consociation.module';
     imports: [
         SharedModule,
         ArticlesModule,
-        LoginModule,
+        // LoginModule,
         BooksModule,
         PodcastsModule,
         MediumModule,
@@ -34,7 +34,8 @@ import { ConsociationModule } from '@src/consociation/consociation.module';
         // ServeStaticModule.forRoot({ // Server Static Client
         //   rootPath: join(__dirname, '..', 'client/dist'), // Server Static Client
         // }), // Server Static Client
-        MongooseModule.forRoot(process.env.MONGODB_MLAB),
+        // TODO: Disable mongodb for now
+        // MongooseModule.forRoot(process.env.MONGODB_MLAB),
     ],
     controllers: [AppController],
     providers: [AppService, EventsGateway],
