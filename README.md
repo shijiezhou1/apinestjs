@@ -88,8 +88,8 @@ git rebase -i HEAD-[commit Id]
 
 ### Unset heroku environment
 
-heroku config:unset HOST
-heroku config:set HOST="abc"
+heroku config:unset --app shijiezhou HOST
+heroku config:set --app shijiezhou  HOST="abc"
 
 
 ### NESTJS COMMAND HELP
