@@ -24,7 +24,7 @@ import { ConsociationModule } from '@src/consociation/consociation.module';
     imports: [
         SharedModule,
         ArticlesModule,
-        // LoginModule,
+        LoginModule,
         BooksModule,
         PodcastsModule,
         MediumModule,
