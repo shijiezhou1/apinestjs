@@ -125,3 +125,11 @@ new|n [options] [name]                          Generate Nest application.
       │ sub-app       │ app         │
       └───────────────┴─────────────┘
 ```
+
+### Docker rebuild compose container
+
+```bash
+docker-compose rm -f
+docker-compose pull
+docker-compose up --build -d
+```
