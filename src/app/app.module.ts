@@ -18,6 +18,7 @@ import { MediumModule } from "@src/medium/medium.module";
 import { CatsModule } from "@src/cats/cats.module";
 import { SubscribeModule } from "@src/subscribe/subscribe.module";
 import { ConsociationModule } from '@src/consociation/consociation.module';
+import { ImageModule } from '@src/image/image.module';
 
 @Module({
     // imports: [EventsModule],
@@ -31,6 +32,7 @@ import { ConsociationModule } from '@src/consociation/consociation.module';
         CatsModule,
         SubscribeModule,
         ConsociationModule,
+        ImageModule,
         // ServeStaticModule.forRoot({ // Server Static Client
         //   rootPath: join(__dirname, '..', 'client/dist'), // Server Static Client
         // }), // Server Static Client
