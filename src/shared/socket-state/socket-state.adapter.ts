@@ -58,8 +58,8 @@ export class SocketStateAdapter extends IoAdapter implements WebSocketAdapter {
 
       // CONNECTION MSG
       setInterval(() => {
-        socket.emit('success', {message: 'Server Accecpting Connections'});
-      },500);
+        socket.emit('success', {message: 'Server Accepting Connections!📞'});
+      }, 500);
 
       // WATCH
       process.on('SIGINT', () => {
