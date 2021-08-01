@@ -17,7 +17,7 @@ export class EventsGateway {
         );
     }
     @SubscribeMessage('前端')
-    public findAll2() {
-        console.log('hit front end');
+    public findAll2(): any {
+        return { event: 'events', data: '前端'};
     }
 }

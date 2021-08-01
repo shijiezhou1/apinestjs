@@ -13,14 +13,16 @@
   <script>
     window.s = io('http://localhost:8080', {
       query: {
-        token: '',
+        token: 'abc',
       },
     });
 
-    s.emit('events', { event: 'events', data: { test: 'fuck' } });
+    s.emit('events', { event: 'events', data: { test: 'testData' } });
     s.on('events', (response) => {
       console.log({ response });
     });
+
+    s.emit('前端', { event: 'events', data: { test: 'testData' } })
   </script>
 </body>
 
