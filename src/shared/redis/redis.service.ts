@@ -48,7 +48,6 @@ export class RedisService {
   }
 
   public async save(data: any): Promise<any> {
-    console.log(data.email)
     return new Promise((resolve, reject) => {
       this.redisPureClient.hset(REDIS_EMAIL_HASH, new Date().toUTCString(), data.email, (err, reply) => {
         if (err) return reject(err);
@@ -64,5 +63,14 @@ export class RedisService {
         return resolve(reply)
       });
     })
+  }
+
+  public async deleteByDate(data: any): Promise<any> {
+    return new Promise<any>((resolve, reject) => {
+      this.redisPureClient.hdel(REDIS_EMAIL_HASH, data.date, (err, reply) =>{
+        if (err) return reject(err);
+        return resolve(reply)
+      })
+    });
   }
 }

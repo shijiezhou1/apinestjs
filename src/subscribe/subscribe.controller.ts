@@ -1,4 +1,4 @@
-import { Controller, Post, Body, Get } from '@nestjs/common';
+import { Controller, Post, Body, Get, Patch } from '@nestjs/common';
 import { Status } from '@src/interface/status.interface';
 import { RedisService } from '@src/shared/redis/redis.service';
 
@@ -18,5 +18,11 @@ export class SubscribeController {
     public async getAllEmails(): Promise<any> {
         const results = await this.redisService.getAllEmails();
         return { status: "success", data: results, code: 200 };
+    }
+
+    @Patch()
+    public async deleteByDate(@Body() formData: object): Promise<Status> {
+        const result = await this.redisService.deleteByDate(formData);
+        return { status: "success", data: result, code: 200 }
     }
 }

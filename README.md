@@ -133,3 +133,9 @@ docker-compose rm -f
 docker-compose pull
 docker-compose up --build -d
 ```
+
+### Docker rebuild with zero down time
+
+```bash
+docker-compose up -d --no-deps --build
+```
