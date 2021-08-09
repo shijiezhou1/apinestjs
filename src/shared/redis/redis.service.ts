@@ -4,7 +4,7 @@ import { filter, map } from 'rxjs/operators';
 
 import { RedisSocketEventSendDTO } from '@src/shared/redis-propagator/dto/socket-event-send.dto';
 
-import { REDIS_PUBLISHER_CLIENT, REDIS_SUBSCRIBER_CLIENT, REDIS_PURE_CLIENT, } from './redis.constants';
+import { REDIS_PUBLISHER_CLIENT, REDIS_SUBSCRIBER_CLIENT, REDIS_PURE_CLIENT, REDIS_EMAIL_HASH, } from './redis.constants';
 import { RedisClient } from './redis.providers';
 
 export interface RedisSubscribeMessage {
@@ -48,12 +48,21 @@ export class RedisService {
   }
 
   public async save(data: any): Promise<any> {
+    console.log(data.email)
     return new Promise((resolve, reject) => {
-      this.redisPureClient.hset("emailhash", new Date().toUTCString(), data.email, (err, reply) => {
+      this.redisPureClient.hset(REDIS_EMAIL_HASH, new Date().toUTCString(), data.email, (err, reply) => {
         if (err) return reject(err);
         return resolve(reply)
       });
     })
+  }
 
+  public async getAllEmails(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.redisPureClient.hgetall(REDIS_EMAIL_HASH, (err, reply) => {
+        if (err) return reject(err);
+        return resolve(reply)
+      });
+    })
   }
 }
