@@ -5,6 +5,7 @@ import { RedisPropagatorService } from '@src/shared/redis-propagator/redis-propa
 import { SocketStateAdapter } from '@src/shared/socket-state/socket-state.adapter';
 import { SocketStateService } from '@src/shared/socket-state/socket-state.service';
 import { join } from 'path';
+import * as requestIp from 'request-ip';
 
 export const initContainer = (app) => {
     const socketStateService = app.get(SocketStateService);
@@ -15,5 +16,7 @@ export const initContainer = (app) => {
     //app.enableShutdownHooks();
     app.setGlobalPrefix('api');
     app.useStaticAssets(join(__dirname, '../../client/dist/'));
+
+    app.use(requestIp.mw());
     return app;
 };
