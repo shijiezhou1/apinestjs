@@ -138,3 +138,9 @@ docker-compose up --build -d
 ```bash
 docker-compose up -d --no-deps --build
 ```
+
+### Run node version
+
+```bash
+nvm use
+```
