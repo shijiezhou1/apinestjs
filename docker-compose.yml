@@ -19,16 +19,16 @@ services:
       # - socket-network
     networks:
       - default
-    depends_on:
-      - socket-redis
-  socket-redis:
-    image: redis:5
-    ports:
-      - 6379:6379
-    # networks:
-    #   - socket-network
-    networks:
-      - default
+  #   depends_on:
+  #     - socket-redis
+  # socket-redis:
+  #   image: redis:5
+  #   ports:
+  #     - 6379:6379
+  #   # networks:
+  #   #   - socket-network
+  #   networks:
+  #     - default
 # networks:
 #   socket-network:
 volumes:

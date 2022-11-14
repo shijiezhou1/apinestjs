@@ -6,7 +6,7 @@
 [travis-url]: https://travis-ci.org/nestjs/nest
 [linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
 [linux-url]: https://travis-ci.org/nestjs/nest
-  
+
   <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
@@ -72,7 +72,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## License
 
-  Nest is [MIT licensed](LICENSE).
+Nest is [MIT licensed](LICENSE).
 
 ## Git Clean Command
 
@@ -80,7 +80,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 git rebase -i [startpoint] [endpoint]
 ```
 
-or 
+or
 
 ```sh
 git rebase -i HEAD-[commit Id]
@@ -89,8 +89,7 @@ git rebase -i HEAD-[commit Id]
 ### Unset heroku environment
 
 heroku config:unset --app shijiezhou HOST
-heroku config:set --app shijiezhou  HOST="abc"
-
+heroku config:set --app shijiezhou HOST="abc"
 
 ### NESTJS COMMAND HELP
 
@@ -107,10 +106,10 @@ new|n [options] [name]                          Generate Nest application.
       │ name          │ alias       │
       │ application   │ application │
       │ class         │ cl          │
-      │ configuration │ config      │
+      │ configuration  │ config       │
       │ controller    │ co          │
       │ decorator     │ d           │
-      │ filter        │ f           │
+      │ filter         │ f           │
       │ gateway       │ ga          │
       │ guard         │ gu          │
       │ interceptor   │ in          │
