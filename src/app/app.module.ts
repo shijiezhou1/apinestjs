@@ -20,7 +20,7 @@ import { SubscribeModule } from "@src/subscribe/subscribe.module";
 import { ConsociationModule } from '@src/consociation/consociation.module';
 import { ImageModule } from '@src/image/image.module';
 import { GeolocationModule } from '@src/geolocation/geolocation.module';
-
+import { VisitorModule } from '@src/visitor/visitor.module';
 @Module({
     // imports: [EventsModule],
     imports: [
@@ -35,6 +35,7 @@ import { GeolocationModule } from '@src/geolocation/geolocation.module';
         ConsociationModule,
         ImageModule,
         GeolocationModule,
+        VisitorModule,
         // ServeStaticModule.forRoot({ // Server Static Client
         //   rootPath: join(__dirname, '..', 'client/dist'), // Server Static Client
         // }), // Server Static Client

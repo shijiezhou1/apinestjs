@@ -94,6 +94,10 @@ heroku config:set --app shijiezhou HOST="abc"
 ### NESTJS COMMAND HELP
 
 ```bash
+nest g <schematics> <folder name>
+```
+
+```bash
 new|n [options] [name]                          Generate Nest application.
   build [options] [app]                           Build Nest application.
   start [options] [app]                           Run Nest application.
